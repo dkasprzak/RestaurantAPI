@@ -7,7 +7,7 @@ namespace RestaurantAPI.Services
     {
         RestaurantDto GetById(int id);
 
-        IEnumerable<RestaurantDto> GetAll();
+        PageResult<RestaurantDto> GetAll(RestaurantQuery query);
 
         int Create(CreateRestaurantDto dto);
 
